@@ -2,7 +2,7 @@ import Navbar from "./components/navbar/navbar";
 import Hero from "./components/hero/hero";
 import Skills from "./components/skills/skill";
 import Projects from "./components/projects/projects";
-import Contact from "./components/contact/Contact";
+import Contact from "./components/contact/contact";
 
 function App(){
 
