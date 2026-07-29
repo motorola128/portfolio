@@ -1,0 +1,30 @@
+.navbar{
+    width:100%;
+    height:80px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding:0 80px;
+    position:fixed;
+    top:0;
+    background:rgba(84, 48, 28, 0.92);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.menu{
+    display:flex;
+    gap:28px;
+    margin:0;
+    padding:0;
+}
+
+.menu li{
+    cursor:pointer;
+    color:#fce9db;
+    font-weight:600;
+}
+
+.menu li:hover{
+    color:#ffd8b5;
+}
