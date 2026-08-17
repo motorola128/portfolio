@@ -35,6 +35,18 @@ const projectsData = [
     tags: "Python • Power BI • Excel • Data Analytics",
     link: "https://github.com/motorola128",
   },
+    {
+   
+    title: "SQL Data Warehouse & Analytics Project",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
+    summary:
+      "An end-to-end SQL project covering data warehousing and analytics, from raw ERP/CRM data to business insights.",
+    description:
+      "Built a data warehouse in SQL Server using the Medallion Architecture (Bronze, Silver, Gold layers) to consolidate ERP and CRM sales data into a clean star schema. Wrote SQL scripts for data cleansing, transformation, and modeling, then used the warehouse to analyze customer behavior, product performance, and sales trends.",
+    tags: "SQL • SQL Server • ETL • Data Modeling • Data Analytics",
+    link: "https://github.com/motorola128",
+  },
 ];
 
 function Projects() {
