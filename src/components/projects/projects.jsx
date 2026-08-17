@@ -6,7 +6,7 @@ const projectsData = [
   {
     title: "LaunchIQ",
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80",
     summary:
       "An analytics platform for understanding product launch performance using customer review data.",
     description:
@@ -39,7 +39,7 @@ const projectsData = [
   {
     title: "SQL Data Warehouse & Analytics Project",
     image:
-      "https://3.bp.blogspot.com/-xtomFYg10PM/W_14GXQsN3I/AAAAAAAAAyw/2nrI0iF9OqYX3BOaYLjoH_2VsSYvAB4dwCLcBGAs/s1600/7.png",
+       "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80",
     summary:
       "An end-to-end SQL project covering data warehousing and analytics, from raw ERP/CRM data to business insights.",
     description:
