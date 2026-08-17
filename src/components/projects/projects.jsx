@@ -2,10 +2,11 @@ import { useState } from "react";
 import "./projects.css";
 
 const projectsData = [
+ 
   {
     title: "LaunchIQ",
     image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
     summary:
       "An analytics platform for understanding product launch performance using customer review data.",
     description:
@@ -16,7 +17,7 @@ const projectsData = [
   {
     title: "REFLECT",
     image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+      "https://miro.medium.com/v2/resize%3Afit%3A1400/1%2ALiXg_PUHnDGBXWM75OSBYQ.jpeg",
     summary:
       "A journaling platform that supports text, audio, and video reflections in one place.",
     description:
@@ -35,11 +36,10 @@ const projectsData = [
     tags: "Python • Power BI • Excel • Data Analytics",
     link: "https://github.com/motorola128",
   },
-    {
-   
+  {
     title: "SQL Data Warehouse & Analytics Project",
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
+      "https://3.bp.blogspot.com/-xtomFYg10PM/W_14GXQsN3I/AAAAAAAAAyw/2nrI0iF9OqYX3BOaYLjoH_2VsSYvAB4dwCLcBGAs/s1600/7.png",
     summary:
       "An end-to-end SQL project covering data warehousing and analytics, from raw ERP/CRM data to business insights.",
     description:
