@@ -1,11 +1,15 @@
 .contact {
-  padding: 110px 8% 70px;
+  padding: 120px 8% 70px;
   text-align: center;
   background: var(--bg);
 }
 
+.section-label.center {
+  justify-content: center;
+}
+
 .contact .contact-intro {
-  max-width: 600px;
+  max-width: 580px;
   margin: 18px auto 0;
   color: var(--muted);
   line-height: 1.8;
@@ -16,28 +20,43 @@
   margin-top: 44px;
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
 .contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
   background: var(--surface);
   color: var(--text-dark);
   border: 1px solid var(--border);
-  padding: 15px 30px;
+  padding: 14px 28px;
   border-radius: 999px;
   transition: 0.25s ease;
   font-weight: 600;
+  font-size: 0.95rem;
   box-shadow: var(--shadow-sm);
 }
 
 .contact-btn:hover {
-  background: var(--accent);
-  color: white;
   border-color: var(--accent);
+  color: var(--accent);
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
+}
+
+.contact-btn.primary-btn {
+  background: var(--text-dark);
+  color: var(--bg);
+  border-color: var(--text-dark);
+}
+
+.contact-btn.primary-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
 }
 
 .contact .copyright {
@@ -45,7 +64,7 @@
   margin-top: 60px;
   border-top: 1px solid var(--border);
   color: var(--muted-soft);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;

@@ -3,24 +3,25 @@ import Hero from "./components/hero/hero";
 import Skills from "./components/skills/skill";
 import Projects from "./components/projects/projects";
 import Contact from "./components/contact/contact";
+import { ScrollProgress, BackToTop } from "./components/chrome/pageChrome";
+import useReveal from "./hooks/useReveal";
 
-function App(){
+function App() {
+  useReveal();
 
-  return(
-
+  return (
     <>
+      <ScrollProgress />
+      <Navbar />
 
-      <Navbar/>
+      <Hero />
+      <Skills />
+      <Projects />
+      <Contact />
 
-      <Hero/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
-
+      <BackToTop />
     </>
-
-  )
-
+  );
 }
 
 export default App;

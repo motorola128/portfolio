@@ -1,9 +1,15 @@
 import "./contact.css";
+import { MailIcon, GithubIcon, LinkedinIcon } from "../icons";
 
 function Contact() {
   return (
     <section className="contact" id="contact">
-      <span className="section-eyebrow">Get In Touch</span>
+      <div className="section-label center">
+        <span className="section-number">03</span>
+        <span className="section-line"></span>
+        <span className="section-tag">Get In Touch</span>
+      </div>
+
       <h2 className="section-heading">Let's Connect</h2>
 
       <p className="contact-intro">
@@ -12,11 +18,8 @@ function Contact() {
       </p>
 
       <div className="contact-buttons">
-
-        <a
-          href="mailto:yourmail@gmail.com"
-          className="contact-btn"
-        >
+        <a href="mailto:yourmail@gmail.com" className="contact-btn primary-btn">
+          <MailIcon width={18} height={18} />
           Email Me
         </a>
 
@@ -26,6 +29,7 @@ function Contact() {
           rel="noreferrer"
           className="contact-btn"
         >
+          <GithubIcon width={18} height={18} />
           GitHub
         </a>
 
@@ -35,15 +39,12 @@ function Contact() {
           rel="noreferrer"
           className="contact-btn"
         >
+          <LinkedinIcon width={18} height={18} />
           LinkedIn
         </a>
-
       </div>
 
-      <p className="copyright">
-        © 2026 Jwelana. All Rights Reserved.
-      </p>
-
+      <p className="copyright">© 2026 Jwelana. All Rights Reserved.</p>
     </section>
   );
 }

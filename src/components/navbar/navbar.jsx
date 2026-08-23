@@ -21,7 +21,7 @@ function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <a href="#home" className="brand" onClick={() => setMenuOpen(false)}>
-        Jwelana
+        Jwelana<span className="brand-dot">.</span>
       </a>
 
       <ul className={`menu ${menuOpen ? "open" : ""}`}>

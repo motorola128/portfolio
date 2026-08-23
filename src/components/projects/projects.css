@@ -1,12 +1,16 @@
 .projects {
-  padding: 110px 8%;
-  text-align: center;
+  padding: 120px 8%;
   background: var(--bg-alt);
 }
 
 .projects-header {
   max-width: 700px;
   margin: 0 auto 56px;
+  text-align: center;
+}
+
+.projects-header .section-label {
+  justify-content: center;
 }
 
 .project-grid {
@@ -23,7 +27,7 @@
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -36,15 +40,23 @@
 
 .project-image {
   width: 100%;
-  height: 190px;
+  height: 200px;
   overflow: hidden;
+  position: relative;
 }
 
 .project-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
+  filter: saturate(0.94);
+}
+
+.project-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(26, 19, 12, 0.25) 100%);
 }
 
 .project-card:hover img {
@@ -52,7 +64,7 @@
 }
 
 .project-body {
-  padding: 24px 24px 26px;
+  padding: 26px 26px 28px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -61,14 +73,15 @@
 .project-card h3 {
   color: var(--text-dark);
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 600;
+  font-family: var(--font-serif);
   margin-bottom: 10px;
 }
 
 .project-card p {
   color: var(--muted);
-  line-height: 1.6;
-  font-size: 0.98rem;
+  line-height: 1.65;
+  font-size: 0.97rem;
   flex: 1;
 }
 
@@ -76,13 +89,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 16px 0 20px;
+  margin: 18px 0 22px;
 }
 
 .tag-pill {
   background: var(--accent-soft);
   color: var(--accent-dark);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 600;
   padding: 5px 12px;
   border-radius: 999px;
@@ -90,27 +103,32 @@
 
 .project-card button {
   align-self: flex-start;
-  padding: 11px 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
   border: none;
-  background: var(--text-dark);
-  color: white;
-  border-radius: 999px;
+  background: none;
+  color: var(--text-dark);
   cursor: pointer;
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  transition: background 0.25s ease, transform 0.25s ease;
+  border-bottom: 1.5px solid var(--text-dark);
+  padding-bottom: 3px;
+  transition: color 0.2s ease, border-color 0.2s ease, gap 0.2s ease;
 }
 
 .project-card button:hover {
-  background: var(--accent);
-  transform: translateY(-2px);
+  color: var(--accent);
+  border-color: var(--accent);
+  gap: 11px;
 }
 
 /* Modal */
 .project-modal {
   position: fixed;
   inset: 0;
-  background: rgba(16, 19, 28, 0.6);
+  background: rgba(26, 19, 12, 0.65);
   backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
@@ -120,8 +138,8 @@
 }
 
 .project-modal-card {
-  background: var(--surface);
-  border-radius: 24px;
+  background: var(--surface-warm);
+  border-radius: 22px;
   padding: 40px 42px;
   width: min(58vw, 780px);
   max-width: 92vw;
@@ -150,15 +168,16 @@
 
 .project-modal-close:hover {
   background: var(--accent);
-  color: white;
+  color: var(--bg);
   border-color: var(--accent);
 }
 
 .project-modal-card h3 {
   margin: 6px 0 16px;
   color: var(--text-dark);
-  font-size: 1.6rem;
-  font-weight: 800;
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  font-weight: 600;
   padding-right: 40px;
 }
 
@@ -174,8 +193,8 @@
   align-items: center;
   justify-content: center;
   padding: 12px 24px;
-  background: var(--accent);
-  color: white;
+  background: var(--text-dark);
+  color: var(--bg);
   border-radius: 999px;
   font-weight: 700;
   font-size: 0.95rem;
@@ -183,7 +202,7 @@
 }
 
 .project-modal-card a:hover {
-  background: var(--accent-dark);
+  background: var(--accent);
   transform: translateY(-2px);
 }
 

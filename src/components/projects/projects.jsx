@@ -1,12 +1,13 @@
 import { useState } from "react";
 import "./projects.css";
+import { ArrowUpRightIcon } from "../icons";
 
 const projectsData = [
  
   {
     title: "LaunchIQ",
     image:
-      "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80",
     summary:
       "An analytics platform for understanding product launch performance using customer review data.",
     description:
@@ -17,7 +18,7 @@ const projectsData = [
   {
     title: "REFLECT",
     image:
-      "https://miro.medium.com/v2/resize%3Afit%3A1400/1%2ALiXg_PUHnDGBXWM75OSBYQ.jpeg",
+      "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1000&q=80",
     summary:
       "A journaling platform that supports text, audio, and video reflections in one place.",
     description:
@@ -28,7 +29,7 @@ const projectsData = [
   {
     title: "Global Data Jobs Market Analysis & Dashboard",
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80",
     summary:
       "A dashboard that explores global salary and skill demand trends in the data jobs market.",
     description:
@@ -39,7 +40,7 @@ const projectsData = [
   {
     title: "SQL Data Warehouse & Analytics Project",
     image:
-       "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1000&q=80",
     summary:
       "An end-to-end SQL project covering data warehousing and analytics, from raw ERP/CRM data to business insights.",
     description:
@@ -54,8 +55,12 @@ function Projects() {
 
   return (
     <section className="projects" id="projects">
-      <div className="projects-header">
-        <span className="section-eyebrow">Selected Work</span>
+      <div className="projects-header reveal">
+        <div className="section-label">
+          <span className="section-number">02</span>
+          <span className="section-line"></span>
+          <span className="section-tag">Selected Work</span>
+        </div>
         <h2 className="section-heading">Projects</h2>
         <p className="section-subtitle">
           Some of my data analytics and web development projects.
@@ -63,10 +68,15 @@ function Projects() {
       </div>
 
       <div className="project-grid">
-        {projectsData.map((project) => (
-          <div className="project-card" key={project.title}>
+        {projectsData.map((project, i) => (
+          <div
+            className="project-card reveal"
+            key={project.title}
+            style={{ transitionDelay: `${i * 0.08}s` }}
+          >
             <div className="project-image">
-              <img src={project.image} alt={project.title} />
+              <img src={project.image} alt={project.title} loading="lazy" />
+              <div className="project-image-overlay"></div>
             </div>
 
             <div className="project-body">
@@ -82,7 +92,8 @@ function Projects() {
               </div>
 
               <button onClick={() => setActiveProject(project)}>
-                View Project →
+                View Project
+                <ArrowUpRightIcon />
               </button>
             </div>
           </div>
