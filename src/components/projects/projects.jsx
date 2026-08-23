@@ -54,24 +54,37 @@ function Projects() {
 
   return (
     <section className="projects" id="projects">
-      <h2>Projects</h2>
-
-      <p className="project-subtitle">
-        Some of my data analytics and web development projects.
-      </p>
+      <div className="projects-header">
+        <span className="section-eyebrow">Selected Work</span>
+        <h2 className="section-heading">Projects</h2>
+        <p className="section-subtitle">
+          Some of my data analytics and web development projects.
+        </p>
+      </div>
 
       <div className="project-grid">
         {projectsData.map((project) => (
           <div className="project-card" key={project.title}>
-            <img src={project.image} alt={project.title} />
+            <div className="project-image">
+              <img src={project.image} alt={project.title} />
+            </div>
 
-            <h3>{project.title}</h3>
+            <div className="project-body">
+              <h3>{project.title}</h3>
+              <p>{project.summary}</p>
 
-            <p>{project.summary}</p>
+              <div className="project-tags">
+                {project.tags.split("•").map((tag) => (
+                  <span className="tag-pill" key={tag}>
+                    {tag.trim()}
+                  </span>
+                ))}
+              </div>
 
-            <span>{project.tags}</span>
-
-            <button onClick={() => setActiveProject(project)}>View Project</button>
+              <button onClick={() => setActiveProject(project)}>
+                View Project →
+              </button>
+            </div>
           </div>
         ))}
       </div>

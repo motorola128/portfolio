@@ -1,49 +1,34 @@
 import "./skill.css";
 
+const skillsData = [
+  { icon: "💻", title: "Programming", items: "Python, SQL, JavaScript" },
+  { icon: "📈", title: "Data Analysis", items: "Pandas, NumPy, Excel" },
+  { icon: "📊", title: "Visualization", items: "Power BI, Matplotlib" },
+  { icon: "🤖", title: "Machine Learning", items: "Scikit-learn, XGBoost" },
+  { icon: "🗄️", title: "Database", items: "MySQL, PostgreSQL" },
+  { icon: "🌐", title: "Web Development", items: "React, HTML, CSS" },
+];
+
 function Skills() {
   return (
     <section className="skills" id="skills">
-
-      <h2>Skills</h2>
-
-      <p className="skill-subtitle">
-        Technologies and tools I use to build data-driven solutions.
-      </p>
-
-      <div className="skills-grid">
-
-        <div className="skill-card">
-          <h3>Programming</h3>
-          <p>Python, SQL, JavaScript</p>
-        </div>
-
-        <div className="skill-card">
-          <h3>Data Analysis</h3>
-          <p>Pandas, NumPy, Excel</p>
-        </div>
-
-        <div className="skill-card">
-          <h3>Visualization</h3>
-          <p>Power BI, Matplotlib</p>
-        </div>
-
-        <div className="skill-card">
-          <h3>Machine Learning</h3>
-          <p>Scikit-learn, XGBoost</p>
-        </div>
-
-        <div className="skill-card">
-          <h3>Database</h3>
-          <p>MySQL, PostgreSQL</p>
-        </div>
-
-        <div className="skill-card">
-          <h3>Web Development</h3>
-          <p>React, HTML, CSS</p>
-        </div>
-
+      <div className="skills-header">
+        <span className="section-eyebrow">What I Work With</span>
+        <h2 className="section-heading">Skills</h2>
+        <p className="section-subtitle">
+          Technologies and tools I use to build data-driven solutions.
+        </p>
       </div>
 
+      <div className="skills-grid">
+        {skillsData.map((skill) => (
+          <div className="skill-card" key={skill.title}>
+            <div className="skill-icon">{skill.icon}</div>
+            <h3>{skill.title}</h3>
+            <p>{skill.items}</p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

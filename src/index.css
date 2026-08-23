@@ -1,38 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-  --bg: #f8efe7;
-  --surface: #fffaf4;
-  --text: #5d3b21;
-  --text-dark: #3f2a18;
-  --accent: #8a4b2a;
-  --accent-2: #b97a4f;
-  --muted: #7a6654;
+  /* Core surfaces */
+  --bg: #f7f8fb;
+  --bg-alt: #eef1f7;
+  --surface: #ffffff;
+  --surface-soft: #fbfcfe;
+
+  /* Text */
+  --text: #1e2433;
+  --text-dark: #10131c;
+  --muted: #5b6478;
+  --muted-soft: #8891a3;
+
+  /* Accent (professional indigo/blue) */
+  --accent: #3454d1;
+  --accent-2: #6c8cff;
+  --accent-soft: #eef1ff;
+  --accent-dark: #24399a;
+
+  /* Borders / shadows */
+  --border: #e4e7ef;
+  --shadow-sm: 0 2px 10px rgba(30, 36, 51, 0.06);
+  --shadow-md: 0 10px 30px rgba(30, 36, 51, 0.08);
+  --shadow-lg: 0 20px 50px rgba(30, 36, 51, 0.12);
+
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    margin:0;
-    font-family:'Poppins', sans-serif;
-    background:var(--bg);
-    color:var(--text);
-    overflow-x:hidden;
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
-a{
-    text-decoration:none;
-    color:inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-ul{
-    list-style:none;
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+
+/* Shared section heading styles */
+.section-eyebrow {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.section-heading {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  color: var(--text-dark);
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  color: var(--muted);
+  margin: 16px auto 0;
+  max-width: 620px;
+  line-height: 1.7;
+  font-size: 1.05rem;
 }
