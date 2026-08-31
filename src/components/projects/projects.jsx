@@ -13,7 +13,7 @@ const projectsData = [
     description:
       "Identified a critical business problem — a 70% product launch failure rate — and built an end-to-end data pipeline processing 65,000+ Amazon reviews to quantify which product attributes drive market success. Translated complex ML outputs (AUC 0.88) into clear business recommendations using SHAP, enabling non-technical product managers to make data-driven launch decisions. Conducted custom analysis across 280 product categories and built a live dashboard for knowledge sharing across teams.",
     tags: "Python • FastAPI • React • SHAP • Data Analytics",
-    link: "https://github.com/motorola128",
+    link: "https://github.com/motorola128/LaunchIQ",
   },
   {
     title: "REFLECT",
@@ -24,7 +24,7 @@ const projectsData = [
     description:
       "Designed a scalable cross-platform journaling platform supporting secure text, audio, and video content. Improved media retrieval efficiency using cloud storage and an optimized NoSQL metadata structure. Translated functional requirements into modular application components and applied structured problem-solving to build reusable, extensible architecture.",
     tags: "React • Python • Supabase",
-    link: "https://github.com/motorola128",
+    link: "https://github.com/motorola128/Reflect-Journel-application",
   },
   {
     title: "Global Data Jobs Market Analysis & Dashboard",
@@ -35,7 +35,7 @@ const projectsData = [
     description:
       "Performed end-to-end ETL on a 2023–2024 global data jobs dataset, using Power Query to clean data, build table relationships, and create calculated DAX measures. Developed interactive dashboards in Excel and Power BI with KPIs, drill-through features, and geographic visuals to uncover global salary and skill demand trends.",
     tags: "Python • Power BI • Excel • Data Analytics",
-    link: "https://github.com/motorola128",
+    link: "https://github.com/motorola128/Excel",
   },
   {
     title: "SQL Data Warehouse & Analytics Project",
@@ -46,7 +46,7 @@ const projectsData = [
     description:
       "Built a data warehouse in SQL Server using the Medallion Architecture (Bronze, Silver, Gold layers) to consolidate ERP and CRM sales data into a clean star schema. Wrote SQL scripts for data cleansing, transformation, and modeling, then used the warehouse to analyze customer behavior, product performance, and sales trends.",
     tags: "SQL • SQL Server • ETL • Data Modeling • Data Analytics",
-    link: "https://github.com/motorola128",
+    link: "https://github.com/motorola128/sql_projects",
   },
 ];
 

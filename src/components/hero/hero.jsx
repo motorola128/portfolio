@@ -35,7 +35,7 @@ function Hero() {
             <GithubIcon />
           </a>
           <a
-            href="https://www.linkedin.com/in/jwelana-m-346b30365"
+            href="https://www.linkedin.com/in/jwelana"
             target="_blank"
             rel="noreferrer"
             className="icon-link"
