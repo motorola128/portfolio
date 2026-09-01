@@ -48,6 +48,22 @@ const projectsData = [
     tags: "SQL • SQL Server • ETL • Data Modeling • Data Analytics",
     link: "https://github.com/motorola128/sql_projects",
   },
+{
+  title: "ACME Insurance Cost Prediction",
+
+  image:
+    "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1000&q=80",
+
+  summary:
+    "An end-to-end machine learning solution for predicting individual medical insurance charges using demographic and lifestyle factors.",
+
+  description:
+    "Developed an end-to-end regression pipeline to predict medical insurance charges. Performed exploratory data analysis, data preprocessing, feature engineering, model training, and performance evaluation using multiple machine learning algorithms. Selected and saved the best-performing model, built a reusable prediction function, and structured the project for deployment and real-world inference.",
+
+  tags: "Python • Pandas • NumPy • Scikit-learn • EDA • Regression • Streamlit",
+
+  link: "https://github.com/motorola128/ACME-Insurance",
+},
 ];
 
 function Projects() {
