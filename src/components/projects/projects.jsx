@@ -60,9 +60,9 @@ const projectsData = [
   description:
     "Developed an end-to-end regression pipeline to predict medical insurance charges. Performed exploratory data analysis, data preprocessing, feature engineering, model training, and performance evaluation using multiple machine learning algorithms. Selected and saved the best-performing model, built a reusable prediction function, and structured the project for deployment and real-world inference.",
 
-  tags: "Python • Pandas • NumPy • Scikit-learn • EDA • Regression • Streamlit",
+  tags: "Python • Pandas • NumPy • Scikit-learn • EDA • Regression",
 
-  link: "https://github.com/motorola128/ACME-Insurance",
+  link: "https://github.com/motorola128/insurance-cost-prediction-ml",
 },
 ];
 
